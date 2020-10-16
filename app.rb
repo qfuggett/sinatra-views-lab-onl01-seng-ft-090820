@@ -16,7 +16,6 @@ class App < Sinatra::Base
   end
   
   get "/date" do
-    binding.pry
     @d = DateTime.now.strftime("The date is %A, %B %d, %Y")
     erb :date
   end
